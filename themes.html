@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <select name="theme" id="theme" onchange="show()">
+        <option disabled selected="selected">Выберите тему</option>
+        <option value="black">Тёмная</option>
+        <option value="white">Светлая</option>
+        <option value="blue">Морская</option>
+    </select>
+
+    <h1>Практическое задание 3</h1>
+
+    <script>
+        function show() {
+            if (document.getElementById("theme").value == "black")
+                document.getElementById("body").style.backgroundColor = "grey";
+
+            if (document.getElementById("theme").value == "white")
+                document.getElementById("body").style.backgroundColor = "beige";
+
+            if (document.getElementById("theme").value == "blue")
+                document.getElementById("body").style.backgroundColor = "lightblue";
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>
